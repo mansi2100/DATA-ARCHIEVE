@@ -47,8 +47,20 @@ The result of this query shows the average price of products for each unique ram
 In both of these queries, the "GROUP BY" part is really important. It's like sorting things based on a specific characteristic. This helps us look at groups of similar things and find out the average price for each group. So, we can see how different things with similar features are priced on average. It helps us understand how certain qualities affect the average price of products.
 
 2. Join opreation 
+A join operation between two tables, smartphone and dimension, and then calculates the average price of smartphones for each brand
+
+ The code retrieves information from two tables, smartphone and dimension, joins them based on the model column, groups the data by brand_name, and calculates the average price for each brand. This query provides insights into how different smartphone brands are priced on average based on the data stored in the two tables. The unusual characters in s.ï»¿brand_name might be due to an encoding issue or special characters in the column name; you may want to verify and correct the column name if needed.
 
 ![Alt text](image-14.png)
+
+This SQL code performs a JOIN operation between two tables, dimension and smartphone, using the model column as the common field for joining.
+
+this query retrieves all columns from the combined result of the dimension and smartphone tables where the model values match. It essentially combines information about smartphones from the dimension table with information about smartphones from the "smartphone" table based on their common model values.
+
+![Alt text](image-15.png)
+
+
+
 
 
 
